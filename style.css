@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #7ee8fa;
+    background-image: linear-gradient(3150deg, #7ee8fa 0%, #80ff72 74%);
+
+    
+}
+header{
+    height: 70px;
+    background: rgba(0,0,0,0.2);
+}
+
+.logo{
+    color: white;
+    padding: 2vh 0 0 2vh;
+    font-family: 'Pacifico', cursive;
+}
+
+/* main */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#main_headline{
+    padding-top: 3vh;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: black 1px 3px 4.5px;
+}
+
+.images{
+    margin-bottom: 2vh;
+    padding-top: 5vh;
+    height: 50vh;
+}
+
+/* waves */
+.music{
+    width: 169px;
+    height: 121px;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    display: inline-flex;
+}
+
+.music .bar{
+    width: 12px;
+    border-radius: 10px;
+    background: white;
+    animation: movement 1.5s ease-in-out infinite;
+}
+
+@keyframes movement {
+    0%, 100%{
+        height: 2px;
+    }
+
+    50%{
+        height: 80px;
+    }
+}
+
+.music .bar:nth-child(1){
+    background: black;
+    animation-delay: 1s;
+}
+
+
+.music .bar:nth-child(2){
+    background: black;
+    animation-delay: .8s;
+}
+
+
+.music .bar:nth-child(3){
+    background: black;
+    animation-delay: .6s;
+}
+
+
+.music .bar:nth-child(4){
+    background: black;
+    animation-delay: .4s;
+}
+
+
+.music .bar:nth-child(5){
+    background: black;
+    animation-delay: .2s;
+}
+
+
+.music .bar:nth-child(6){
+    background: black;
+    animation-delay: .2s;
+}
+
+
+.music .bar:nth-child(7){
+    background: black;
+    animation-delay: .4s;
+}
+
+
+.music .bar:nth-child(8){
+    background: black;
+    animation-delay: .6s;
+}
+
+
+.music .bar:nth-child(9){
+    background: black;
+    animation-delay: .8s;
+}
+
+
+.music .bar:nth-child(10){
+    background: black;
+    animation-delay: 1s;
+}
+ 
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    height: 60vh;
+    background-color: #373737;
+    padding: 0 10vh;
+}
+
+footer p{
+    justify-content: center;
+}
+
+#copyright{
+    background-color: black;
+    font-size: 13px;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+.devider{
+    height: 1px;
+    width: 13%;
+    background-color: #fff;
+    margin-bottom: 5vh;
+}
